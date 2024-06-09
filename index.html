@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Home page</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="background-image"></div>
+    <div class="content">
+        <header>Welcome</header>
+        <p id="clock"></p>
+
+        <form action="https://www.google.com/search" class="searchform" method="get" name="searchform">
+            <img id="bmo" src="img/realbmo2.png"></img>
+            <input autocomplete="off" class="form-control search" name="q" placeholder="Use BMO search" required="required" type="text">
+        </form>
+
+        <div class="buttons">
+            <button onclick="location.href = 'https://www.youtube.com';">Youtube</button>
+            <button onclick="location.href = 'https://www.reddit.com/r/unixporn';">/r/UnixPorn</button>
+            <button onclick="location.href = 'https://www.twitch.tv';">Twitch</button>
+            <button onclick="location.href = 'https://www.chatgpt.com';">ChatGPT</button>
+        </div>
+    </div>
+
+    <script>
+        function updateTime() {
+            var now = new Date();
+            var time = now.toLocaleString();
+            document.getElementById("clock").innerHTML = time;
+        }
+
+        updateTime();
+        setInterval(updateTime, 1000);
+    </script>
+</body>
+</html>
+

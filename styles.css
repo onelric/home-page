@@ -1,0 +1,79 @@
+body {
+    background-color: black;
+    overflow: hidden;
+}
+
+.content {
+    overflow: auto;
+    position: relative;
+    font-family: Monolisa;
+    text-align: center;
+    color: #e8e3e3;
+}
+
+.background-image {
+    opacity: 20%;
+    background-image: url("img/bmo.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: absolute;
+    display: block;
+    filter: blur(20px);
+    width: 100%;
+    height: 100%;
+}
+
+#bmo {
+    width: 100px;
+    position: absolute;
+    top: 10%;
+    right: 100px;
+}
+
+.searchform {
+    margin-top: 60px;
+}
+
+input {
+    color: #e8e3e3;
+    opacity: 75%;
+    font-family: inherit;
+    width: 650px;
+    padding: 20px;
+    border-color: #e8e3e3;
+    border-width: 5;
+    border-radius: 40px;
+    border: solid;
+    outline: none;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+button {
+    font-family: inherit;
+    font-size: 15px;
+    background: none;
+    border: none;
+    outline: none;
+    color: #e8e3e3;
+    margin: 20px;
+    padding: 8px;
+    cursor: grab;
+    font-weight: bold;
+}
+
+button:hover {
+    color: #8c977d;
+    font-weight: bolder;
+    font-style: italic;
+}
+
+.buttons {
+    margin-top: 12px;
+}
+
+header {
+    font-size: 65px;
+    font-style: italic;
+    margin-top: 110px;
+}
