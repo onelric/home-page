@@ -12,7 +12,7 @@
 
         <form action="https://www.google.com/search" class="searchform" method="get" name="searchform">
             <img id="bmo" src="img/realbmo2.png"></img>
-            <input autocomplete="off" class="form-control search" name="q" placeholder="Use BMO search" required="required" type="text">
+            <input autocomplete="off" id="textinput" name="q" placeholder="Use BMO search" required="required" type="text">
         </form>
 
         <div class="buttons">
@@ -24,6 +24,10 @@
     </div>
 
     <script>
+        var input = document.getElementById('textinput');
+        input.focus();
+        input.select();
+
         function updateTime() {
             var now = new Date();
             var time = now.toLocaleString();
