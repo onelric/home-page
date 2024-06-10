@@ -6,7 +6,7 @@ body {
 .content {
     overflow: auto;
     position: relative;
-    font-family: Monolisa;
+    font-family: 'Maple Mono NF';
     text-align: center;
     color: #e8e3e3;
 }
