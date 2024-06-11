@@ -60,12 +60,14 @@ button {
     padding: 8px;
     cursor: grab;
     font-weight: bold;
+    transition: all 200ms;
 }
 
 button:hover {
     color: #8c977d;
     font-weight: bolder;
     font-style: italic;
+    font-size: 20px;
 }
 
 .buttons {
