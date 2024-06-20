@@ -47,6 +47,7 @@ input {
     border: solid;
     outline: none;
     background-color: rgba(0, 0, 0, 0.5);
+    text-align: center;
 }
 
 button {
