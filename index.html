@@ -3,32 +3,45 @@
 <head>
     <title>Home page</title>
     <link rel="stylesheet" href="styles.css">
+
+    <meta http-equiv="Cache-Control" content="no-store, no-cache, must-revalidate, max-age=0">
+    <meta http-equiv="Pragma" content="no-cache">
+    <meta http-equiv="Expires" content="0">
 </head>
 <body>
-    <div class="background-image"></div>
-    <div class="content">
-        <header>Welcome</header>
-        <p id="clock"></p>
+    <img id="image" src="./img/image.png"></img>
 
+    <div id="whatwewant">
         <form action="https://www.google.com/search" class="searchform" method="get" name="searchform">
-            <!--<img id="bmo" src="img/realbmo2.png"></img>-->
             <input autocomplete="off" id="textinput" name="q" placeholder="Search" required="required" type="text">
         </form>
+        <div id="home" class="directories">
+            <h class="directory">/home</h>
+            <div class="shortcuts">
+                <button class="shortcut" onclick="location.href = 'https://www.discord.com/app';">Discord</button>
+                <button class="shortcut" onclick="location.href = 'https://www.reddit.com/r/unixporn';">/r/UnixPorn</button>
+                <button class="shortcut" onclick="location.href = 'https://www.youtube.com';">Youtube</button>
+                <button class="shortcut" onclick="location.href = 'https://www.open.spotify.com/';">Spotify</button>
+            </div>
+        </div>
 
-        <div class="buttons">
-            <div>
-                <button onclick="location.href = 'https://discord.com/app';">  Discord</button>
-                <button onclick="location.href = 'https://www.reddit.com/r/unixporn';"> /r/UnixPorn</button>
-                <button onclick="location.href = 'https://www.github.com/onelric';"> Github</button>
-                <button onclick="location.href = 'https://www.nerdfonts.com/cheat-sheet';">  Nerd Fonts</button>
+
+        <div id="nixos" class="directories">
+            <h class="directory">/etc/nixos</h>
+            <div class="shortcuts">
+                <button class="shortcut" onclick="location.href = 'https://nixos.org/manual/nixos/stable/';">NixOS Manual</button>
+                <button class="shortcut" onclick="location.href = 'https://nix-community.github.io/home-manager/options.xhtml';">NixOS Options</button>
+                <button class="shortcut" onclick="location.href = 'https://search.nixos.org/packages';">NixOS Packages</button>
             </div>
-            <div>
-                <button onclick="location.href = 'https://www.chatgpt.com';">󰭹 ChatGPT</button>
-                <button onclick="location.href = 'https://docs.voidlinux.org/about/index.html';"> Void Docs</button>
-                <button onclick="location.href = 'https://wiki.archlinux.org/';">󰣇 Arch Wiki</button>
+        </div>
+
+        <div id="root" class="directories">
+            <h class="directory">/root</h>
+            <div class="shortcuts">
+                <button class="shortcut" onclick="location.href = 'https://www.chatgpt.com';">ChatGPT</button>
+                <button class="shortcut" onclick="location.href = 'https://wiki.archlinux.org/';">Arch Wiki</button>
+                <button class="shortcut" onclick="location.href = 'https://www.github.com/onelric';">Github</button>
             </div>
-            <button onclick="location.href = 'https://www.youtube.com';"> Youtube</button>
-                <button onclick="location.href = 'https://www.open.spotify.com/';"> Spotify</button>
         </div>
     </div>
 
@@ -36,15 +49,6 @@
         var input = document.getElementById('textinput');
         input.focus();
         input.select();
-
-        function updateTime() {
-            var now = new Date();
-            var time = now.toLocaleString();
-            document.getElementById("clock").innerHTML = time;
-        }
-
-        updateTime();
-        setInterval(updateTime, 1000);
     </script>
 </body>
 </html>
